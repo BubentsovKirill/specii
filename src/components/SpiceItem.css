@@ -1,0 +1,33 @@
+.spiceImg{
+    float: left;
+    width:20%;
+    border:1px solid black;
+}
+.SpiceItemDiscription{
+    float: left;
+    padding-left: 10px;
+    width:75%;
+}
+.clearFix{
+    clear: both;
+}
+.SpiceItem{
+    border:1px solid black;
+    padding: 5px !important;
+    margin-bottom: 5px;
+    background: #f9f9f9;
+}
+.SpiceItemTitle{
+    font-size:15px;
+}
+.SpiceItemTitle span{
+    font-weight:bold;
+}
+.SpiceItemTitleDiscription{
+    font-size: 12px;
+}
+.readMore{
+    font-style: italic;
+    color: #000;
+    text-decoration: underline;
+}

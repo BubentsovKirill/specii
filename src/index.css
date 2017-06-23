@@ -1,0 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #fef8e2;
+}
+
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");

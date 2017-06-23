@@ -1,0 +1,21 @@
+.table tr td:first-child{
+    width:25%;
+}
+.tableScroll{
+    overflow: auto;
+}
+table{
+    font-size:12px;
+}
+caption{
+    font-size:20px;
+    color: black !important;
+    font-weight: bold;
+}
+td:not(:first-child){
+    text-align: center;
+}
+
+th:not(:first-child){
+    text-align: center;
+}

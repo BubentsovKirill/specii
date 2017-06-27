@@ -5,11 +5,11 @@ import './SpiceItem.css';
 const SpiceItem = ({title, titleEng, titleDiscription, id, img}) => {
     return(
         <div className="col-md-6">
-            <div className=" SpiceItem">
+            <div className="SpiceItem">
                 <img src={process.env.PUBLIC_URL + `/img/${img}`} className="spiceImg" alt="img"/>
                 <div className="SpiceItemDiscription">
                     <p className="SpiceItemTitle"><span>{title}</span> ({titleEng})</p>
-                    <p className="SpiceItemTitleDiscription">{titleDiscription.substring(0,180) + '...'}</p>
+                    <p className="SpiceItemTitleDiscription">{titleDiscription.substring(0,170) + '...'}</p>
                     <Link to={`/about-spice/${id}`} className="readMore">Подробнее</Link>
                 </div>
                 <div className="clearFix"></div>
@@ -17,6 +17,6 @@ const SpiceItem = ({title, titleEng, titleDiscription, id, img}) => {
         </div>
 
     )
-}
+};
 
 export default SpiceItem;

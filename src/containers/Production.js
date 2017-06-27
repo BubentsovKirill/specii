@@ -30,9 +30,9 @@ class Production extends Component{
     render(){
         return(
             <div className="Contacts">
+                <h3>Весовые товары</h3>
                 <div className="tableScroll">
                     <table className="table table-striped">
-                        <caption>Весовые товары</caption>
                         <thead>
                         <tr>
                             <th>Наименование</th>
@@ -63,9 +63,9 @@ class Production extends Component{
                     </table>
                 </div>
                 <br/>
+                <h3>Приправы</h3>
                 <div className="tableScroll">
                     <table className="table table-striped">
-                        <caption>Приправы</caption>
                         <thead>
                         <tr>
                             <th>Наименование</th>
@@ -95,9 +95,9 @@ class Production extends Component{
                         </tbody>
                     </table>
                 </div>
+                <h3>Специи, пряности, кондитерские добавки</h3>
                 <div className="tableScroll">
                     <table className="table table-striped">
-                        <caption>Специи, пряности, кондитерские добавки</caption>
                         <thead>
                         <tr>
                             <th>Наименование</th>

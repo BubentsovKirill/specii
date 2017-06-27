@@ -7,7 +7,7 @@
 table{
     font-size:12px;
 }
-caption{
+h3{
     font-size:20px;
     color: black !important;
     font-weight: bold;
@@ -15,7 +15,12 @@ caption{
 td:not(:first-child){
     text-align: center;
 }
+td{
+    font-weight: bold;
+    vertical-align: middle !important;
+}
 
 th:not(:first-child){
     text-align: center;
+    font-size:12px;
 }

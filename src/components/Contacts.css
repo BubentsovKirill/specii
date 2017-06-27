@@ -1,0 +1,17 @@
+.Contacts h4{
+    font-size:20px;
+}
+.Contacts p{
+    font-size:18px;
+}
+.Contacts .col-md-6{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-bottom: 25px;
+}
+.Contacts li{
+    font-size:15px;
+}
+.Contacts .block{
+    margin-bottom: 25px;
+}

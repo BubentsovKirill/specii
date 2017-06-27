@@ -1,0 +1,27 @@
+.Info p{
+    font-size: 18px;
+}
+.Info li{
+    font-size: 16px;
+}
+@media screen and (max-width: 768px){
+    .spiceInfoImg{
+        margin-bottom: 25px !important;
+    }
+}
+@media screen and (min-width: 768px){
+    .spiceInfoImg{
+        margin-bottom: 5px !important;
+    }
+}
+.spiceInfoImg{
+    border:1px solid black;
+    width:160px;
+}
+.SpiceInfoTitle{
+    font-size:20px !important;
+    font-weight: bold;
+}
+.SpiceInfoTitleDiscription{
+    font-size:18px;
+}

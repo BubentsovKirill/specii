@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
-import {Link, Route} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 import Home from '../components/Home';
+import Header from '../components/Header';
 import Contacts from '../components/Contacts';
 import AboutSpice from './AboutSpice';
 import Production from './Production';
 import SpiceInfo from './SpiceInfo';
+import NoMatch from '../components/NoMatch';
 import './App.css';
 
 class App extends Component {
@@ -28,46 +30,26 @@ class App extends Component {
                   container.removeClass('out');
               }
           })
-
       });
   }
   render() {
     return (
       <div className="App">
-          <header role="banner" className="navbar navbar-fixed-top navbar-inverse">
-              <div className="container">
-                  <div className="navbar-header">
-                      <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" className="navbar-toggle pull-left">
-                          <span className="icon-bar"></span>
-                          <span className="icon-bar"></span>
-                          <span className="icon-bar"></span>
-                      </button>
-                      <img src="img/logo.png" className="hidden-lg hidden-md hidden-sm" alt="logo"/>
-                  </div>
-                  <div className="navbar-inverse side-collapse in">
-                      <nav className="navbar-collapse">
-                          <ul className="nav navbar-nav">
-                              <li><Link to="/">Главная</Link></li>
-                              <li><Link to="/production">Продукция</Link></li>
-                              <li><Link to="/about-spice">Cпеции</Link></li>
-                              <li><Link to="/contacts">Контакты</Link></li>
-                              <li><a href="priceList.xls">Прейскурант</a></li>
-                          </ul>
-                      </nav>
-                  </div>
-              </div>
-          </header>
+          <Header/>
           <div className="container side-collapse-container childComponents">
               <div className="titleImgBLock">
-                  <img src="img/header.gif" alt="" className="img-responsive center-block titleImg"/>
+                  <img src={process.env.PUBLIC_URL + `/img/header.gif`} alt="title" className="img-responsive center-block titleImg"/>
               </div>
               <div className="row">
                   <div className="col-md-12">
-                      <Route exact path="/" component={Home}/>
-                      <Route path="/production" component={Production}/>
-                      <Route exact path="/about-spice" component={AboutSpice}/>
-                      <Route path="/about-spice/:id" component={SpiceInfo}/>
-                      <Route path="/contacts" component={Contacts}/>
+                      <Switch>
+                          <Route exact path="/" component={Home}/>
+                          <Route path="/production" component={Production}/>
+                          <Route exact path="/about-spice" component={AboutSpice}/>
+                          <Route path="/about-spice/:id" component={SpiceInfo}/>
+                          <Route path="/contacts" component={Contacts}/>
+                          <Route component={NoMatch}/>
+                      </Switch>
                   </div>
               </div>
           </div>

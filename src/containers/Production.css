@@ -1,5 +1,5 @@
 .table tr td:first-child{
-    width:25%;
+    width:45%;
 }
 .tableScroll{
     overflow: auto;

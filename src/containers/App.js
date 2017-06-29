@@ -53,6 +53,7 @@ class App extends Component {
                   </div>
               </div>
           </div>
+          <div className="devider"></div>
           <div className="navbar-fixed-bottom row-fluid navbar-inverse">
               <div className="container footer">
                   <div className="row">

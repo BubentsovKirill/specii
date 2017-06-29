@@ -21,6 +21,12 @@ class SpiceInfo extends Component{
                     spice: sp[i]
                 })
             }
+            else{
+                sp[i].id = 0;
+                this.setState({
+                    spice: sp[i]
+                })
+            }
         }
 
         var body = document.querySelector('body');
@@ -28,6 +34,7 @@ class SpiceInfo extends Component{
 
     }
     render(){
+        console.log(this.props.match);
         const item = this.state.spice;
         const integritty = item.integritty;
         const cooking = item.cooking;
